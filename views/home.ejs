@@ -1,0 +1,155 @@
+<!-- head file code -->
+<%-include("includes/head.ejs")%>
+<!-- head file code -->
+<body>
+ <%- include("includes/nav.ejs")
+ %>
+   
+<div id="tag_container">
+
+    <div id="tag">
+<div id="left_tag"><img src="https://images.pexels.com/photos/3037727/pexels-photo-3037727.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt=""></div>
+<div id="right_tag">
+   
+    <span>we make<br> <span>memories</span>
+    <br> <span> last a</span>
+    <br><span>lifetime..</span>
+</div>
+        
+    </div>
+
+
+
+</div>
+<hr><br>
+       
+        <div id="imgg">
+
+            <div id="imgscroll">
+
+                <img src="https://images.pexels.com/photos/610294/pexels-photo-610294.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+
+
+               
+                  <img src="https://images.pexels.com/photos/3296541/pexels-photo-3296541.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+
+            </div>
+          
+        </div>
+
+       
+    <div id="banner">
+        <img src="https://images.pexels.com/photos/15104800/pexels-photo-15104800/free-photo-of-a-photographer-taking-a-picture.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+       
+    </div>
+    <hr>
+
+
+    <div class="project">
+
+        <img src="https://images.pexels.com/photos/6827315/pexels-photo-6827315.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+        <div id="details">
+            <div id="name"><h2>sk8rz products showcase</h2>
+            <div id="caption">
+              highlights product perfection through our models.
+            </div>
+            </div>
+            
+            <div id="date">04/19</div>
+        </div>
+    
+    
+    </div>
+
+    <div class="project">
+
+        <img src="https://images.pexels.com/photos/2962208/pexels-photo-2962208.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+        <div id="details">
+            <div id="name"><h2>Corporate life briliance</h2>
+            <div id="caption">
+           showcase corporate excellence during daily work.
+            </div>
+            </div>
+            
+            <div id="date">05/24</div>
+        </div>
+ 
+
+
+    </div>
+<!-- footer code file -->
+<%-include("includes/foot.ejs")%>
+<!-- footer code file -->
+</body>
+<script>
+var menu= document.querySelector("#menu")
+ var show=document.querySelector("#show")
+
+ show.addEventListener("click",function(){
+    show.style.color="black"
+    menu.style.display="block"
+ })
+menu.addEventListener("click",function(){
+    
+    menu.style.display="none"
+    show.style.color="black"
+})
+
+
+// cursor annimation
+
+// var body=document.querySelector("body")
+
+// var pointer=document.querySelector("#pointer")
+
+// body.addEventListener("mouseover",function(e){
+//     pointer.style.display="block"
+//  pointer.style.top=e.pageY +"px"
+// pointer.style.left=e.pageX +"px"
+// console.log(e)
+    
+// })
+var colour=document.querySelector("#color")
+var picture=document.querySelectorAll("img")
+ colour.addEventListener("click",function(){
+    setTimeout(function(){
+        for(picture of picture){
+        picture.style.filter="none"
+        console.log("timeout")
+    }
+    },100)
+
+   
+  
+ })
+// var a= document.querySelector("right_tag span")
+//  a.addEventListener("mousemove",function(){
+//     for(a of a){
+//         a.style.filter="grayscale(0)"
+//     }
+    
+  
+//  })
+var a=document.querySelector("#right_tag");
+var b=document.querySelectorAll("#right_tag span")
+
+
+
+var allimg=document.querySelectorAll("img")
+
+    for(img of allimg){
+img.addEventListener("mousemove",function(e){
+    e.target.style.filter="grayscale(0)"
+    console.log(e.target)
+})
+
+    }
+
+    
+
+  
+
+
+
+</script>
+</html>

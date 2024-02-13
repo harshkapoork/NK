@@ -1,0 +1,79 @@
+<!-- head code file -->
+<%-include("includes/head.ejs")%>
+<!-- head code file -->
+<body>
+    <!-- nav code file -->
+    <%- include("includes/nav.ejs")
+    %>
+    <!-- nav code file -->
+
+    <div id="about">
+        <div id="heading">
+            <h1>our</h1>
+            <h1>services</h1>
+        </div>
+       
+
+       
+    <div id="banner">
+        <img src="https://images.pexels.com/photos/4552138/pexels-photo-4552138.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+       
+    </div>
+    <hr>
+
+    <div id="services">
+comming soon
+
+
+    </div>
+<hr>
+    </div>
+
+    
+    <!-- footer code file -->
+<%- include("includes/foot.ejs")%>
+    <!-- footer code file -->
+
+
+<script> var menu= document.querySelector("#menu")
+    var show=document.querySelector("#show")
+   
+    show.addEventListener("click",function(){
+       show.style.color="black"
+       menu.style.display="block"
+    })
+   menu.addEventListener("click",function(){
+       
+       menu.style.display="none"
+       show.style.color="black"
+   })
+   
+   
+   // cursor annimation
+   
+   // var body=document.querySelector("body")
+   
+   // var pointer=document.querySelector("#pointer")
+   
+   // body.addEventListener("mouseover",function(e){
+   //     pointer.style.display="block"
+   //  pointer.style.top=e.pageY +"px"
+   // pointer.style.left=e.pageX +"px"
+   // console.log(e)
+       
+   // })
+   var colour=document.querySelector("#color")
+   var picture=document.querySelectorAll("img")
+    colour.addEventListener("click",function(){
+       setTimeout(function(){
+           for(picture of picture){
+           picture.style.filter="none"
+           console.log("timeout")
+       }
+       },100)
+   
+      
+     
+    })</script>
+</body>
+</html>

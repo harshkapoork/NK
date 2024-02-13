@@ -1,0 +1,70 @@
+#contact h3{
+    font-size: 4vw;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+#contact span{
+    color: gray;
+    font-size: small
+}
+
+#contact ::placeholder{
+    text-transform: none;
+    padding: 0 1vw;
+    text-align: start;
+}
+
+#contact form{display: flex;
+flex-direction: column;
+gap:2vw;
+}
+#contact input{
+   background-color: rgba(0, 0, 0, 0.288);
+    border: 0;
+    border-radius: 10px;
+    color:rgb(0, 0, 0);
+    text-transform: none;
+}
+#contact input:nth-child(1){
+    height: 5vw;
+    width: 45%
+}
+
+
+#contact input:nth-child(2){
+    height: 5vw;
+    width: 45%;
+
+}
+
+#contact input:nth-child(3){
+    margin: 2vw 0;
+    height: 10vw;
+    width: 99%
+}
+
+@media (max-width:600px){
+    #contact input:nth-child(1){
+        height: 7vw;
+        width: 48%
+    }
+    
+    
+    #contact input:nth-child(2){
+        height: 7vw;
+        width: 48%
+    }
+    
+    #contact input:nth-child(3){
+        margin: 2vw 0;
+        height: 25vw;
+        width: 99%
+    }
+    
+}
+
+#contact button{
+    width: 100%;
+    background-color: black;
+    color: white;
+}

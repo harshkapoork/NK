@@ -1,0 +1,92 @@
+<%-include("includes/head.ejs")%>
+<body>
+      <!-- nav code file -->
+ <%- include("includes/nav.ejs")
+ %>
+ <!-- nav code file -->
+
+
+    <div id="about">
+        <div id="heading">
+            <h1>contact</h1>
+            <h1>us</h1>
+        </div>
+    <div id="banner">
+        <img src="https://images.pexels.com/photos/1252500/pexels-photo-1252500.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+       
+    </div>
+
+    <div id="contact">
+
+        <h3>keep in touch</h3>
+        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum ea qui exercitationem esse, ex quibusdam veritatis voluptates tempore adipisci, ducimus consectetur, minus temporibus? Vitae soluta nulla fuga quo reprehenderit praesentium?</span>
+        <form method="post">
+        <input  type="text" placeholder="name">
+        <input type="email" placeholder="email">
+        <input type="textbox" placeholder="message">
+        <button type="submit" >Submit</button>
+    </form>
+    </div>
+
+    </div>
+
+
+<!-- footer file start -->
+ <%-include("includes/foot.ejs")%>
+    
+<!--footer file end -->
+    <script>
+document.querySelector("button").addEventListener("click",(""))
+// nav
+
+
+
+    </script>
+
+<script>var menu= document.querySelector("#menu")
+    var show=document.querySelector("#show")
+   
+    show.addEventListener("click",function(){
+       show.style.color="black"
+       menu.style.display="block"
+    })
+   menu.addEventListener("click",function(){
+       
+       menu.style.display="none"
+       show.style.color="black"
+   })
+   
+   
+   // cursor annimation
+   
+   // var body=document.querySelector("body")
+   
+   // var pointer=document.querySelector("#pointer")
+   
+   // body.addEventListener("mouseover",function(e){
+   //     pointer.style.display="block"
+   //  pointer.style.top=e.pageY +"px"
+   // pointer.style.left=e.pageX +"px"
+   // console.log(e)
+       
+   // })
+   var colour=document.querySelector("#color")
+   var picture=document.querySelectorAll("img")
+    colour.addEventListener("click",function(){
+       setTimeout(function(){
+           for(picture of picture){
+           picture.style.filter="none"
+           console.log("timeout")
+       }
+       },100)
+   
+      
+     
+    })</script>
+      
+    
+    
+    
+    
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!-- head code file -->
+<%-include("includes/head.ejs")%>
+<!-- head code file -->
+<body>
+     <!-- nav code file -->
+     <%- include("includes/nav.ejs")
+     %>
+     <!-- nav code file -->
+<div id="banner">
+    <img src="https://images.pexels.com/photos/9705731/pexels-photo-9705731.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+   
+</div>
+<hr>
+
+<div class="project">
+
+    <img src="https://images.pexels.com/photos/2253870/pexels-photo-2253870.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+    <div id="details">
+        <div id="name"><h2>wedding of Daniel & Johanne</h2>
+        <div id="caption">
+            a romantic and joufull wedding celebration
+        </div>
+        </div>
+        
+        <div id="date">08/15</div>
+    </div>
+
+
+</div>
+
+<div class="project">
+
+    <img src="https://images.pexels.com/photos/4173326/pexels-photo-4173326.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+    <div id="details">
+        <div id="name"><h2>sk8rz products showcase</h2>
+        <div id="caption">
+          highlights product perfection through our models.
+        </div>
+        </div>
+        
+        <div id="date">04/19</div>
+    </div>
+
+
+</div>
+
+<div class="project">
+
+    <img src="https://images.pexels.com/photos/5257892/pexels-photo-5257892.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+    <div id="details">
+        <div id="name"><h2>Corporate life briliance</h2>
+        <div id="caption">
+       showcase corporate excellence during daily work.
+        </div>
+        </div>
+        
+        <div id="date">05/24</div>
+    </div>
+
+
+</div>
+
+</div>
+<!-- footer code file -->
+<%-include("includes/foot.ejs")%>
+<!-- footer code file -->
+    <script> var menu= document.querySelector("#menu")
+        var show=document.querySelector("#show")
+       
+        show.addEventListener("click",function(){
+           show.style.color="black"
+           menu.style.display="block"
+        })
+       menu.addEventListener("click",function(){
+           
+           menu.style.display="none"
+           show.style.color="black"
+       })
+       
+       
+       // cursor annimation
+       
+       // var body=document.querySelector("body")
+       
+       // var pointer=document.querySelector("#pointer")
+       
+       // body.addEventListener("mouseover",function(e){
+       //     pointer.style.display="block"
+       //  pointer.style.top=e.pageY +"px"
+       // pointer.style.left=e.pageX +"px"
+       // console.log(e)
+           
+       // })
+       var colour=document.querySelector("#color")
+       var picture=document.querySelectorAll("img")
+        colour.addEventListener("click",function(){
+           setTimeout(function(){
+               for(picture of picture){
+               picture.style.filter="none"
+               console.log("timeout")
+           }
+           },100)
+       
+          
+         
+        })</script>
+</body>
+</html>
